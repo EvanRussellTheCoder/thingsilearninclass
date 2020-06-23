@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void mystery(unsigned int n){
+  if(n < 2){
+    cout << n;
+  } else{
+    mystery(n/2);
+    cout << n % 2;
+    }
+}
+
+int main() {
+  mystery(5);
+  return 0;
+}
